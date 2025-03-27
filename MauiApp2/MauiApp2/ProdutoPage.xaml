@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.ProdutoPage"
+             Title="Detalhes do Produto">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <Frame Padding="15" CornerRadius="10" BorderColor="LightGray">
+            <VerticalStackLayout Spacing="10">
+
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="Nome:" 
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="Gray"/>
+                    <Label Text="{Binding Nome}"
+                           FontSize="16"
+                           FontAttributes="Bold"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="Preço:" 
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="Gray"/>
+                    <Label Text="{Binding Preco, StringFormat='R$ {0:N2}'}"
+                           FontSize="16"
+                           TextColor="DarkGreen"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="Categoria:" 
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="Gray"/>
+                    <Label Text="{Binding Categoria}"
+                           FontSize="16"/>
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+
+</ContentPage>
