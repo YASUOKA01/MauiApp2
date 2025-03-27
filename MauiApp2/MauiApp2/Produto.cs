@@ -9,7 +9,6 @@ namespace MauiApp2
         public string Nome { get; set; }
         public string Categoria { get; set; }
 
-        // Lista estática para armazenar os produtos sem perder os dados
         public static List<Produto> Lista { get; } = new List<Produto>
         {
             new Produto() { Nome = "Buzina", Preco = 300, Categoria = "Acessórios" },
